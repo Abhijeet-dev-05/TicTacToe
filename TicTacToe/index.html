@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Animated Mascot Reacts to Your Game -->
+    <div class="mascot-container">
+        <img id="mascot"
+            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Alien%20Monster.png"
+            alt="Game Mascot" class="mascot-img">
+    </div>
+
+    <!-- Main Game Container -->
+    <div class="game-wrapper glass">
+        <h1 class="title">TIC <span class="neon-x">TAC</span> <span class="neon-o">TOE</span></h1>
+
+        <div class="status-board">
+            <div class="player-turn" id="turnIndicator">Player <span class="neon-x">X</span>'s Turn</div>
+        </div>
+
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <p class="winning-message" id="winningMessage"></p>
+
+        <button id="restartButton" class="restart-btn">Restart Battle</button>
+    </div>
+
+    <!-- Official Canvas Confetti API for amazing Win Animations -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="first.js"></script>
+</body>
+
+</html>
